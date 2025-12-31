@@ -1,0 +1,53 @@
+.playback-bar {
+  height: 25px;
+}
+.x-progressBar-sliderArea {
+  height: 16px;
+}
+.playback-bar .progress-bar__slider::after {
+  display: none !important;
+  top: unset;
+  transform: unset;
+}
+
+.playback-bar .progress-bar {
+  --progress-bar-height: 8px !important;
+}
+
+.playback-bar
+  :is(
+    .playback-progressbar-isInteractive .progress-bar--isDragging,
+    .playback-progressbar-isInteractive .progress-bar:focus,
+    .playback-progressbar-isInteractive .progress-bar:hover,
+    .playback-progressbar-isInteractive:focus-within
+  ) {
+  --progress-bar-height: 12px !important;
+}
+
+.playback-bar
+  :is(
+    .x-progressBar-progressBarBg,
+    .x-progressBar-sliderArea,
+    .x-progressBar-fillColor
+  ) {
+  transition: height 0.1s cubic-bezier(0, 0, 0.2, 1) !important;
+}
+
+.playback-bar
+  :is(
+    .playback-progressbar-isInteractive .progress-bar--isDragging,
+    .playback-progressbar-isInteractive .progress-bar:focus,
+    .playback-progressbar-isInteractive .progress-bar:hover,
+    .playback-progressbar-isInteractive:focus-within
+  )
+  .progress-bar__slider {
+  image-rendering: pixelated !important;
+  transform: translateY(-50%) scale(1.5) !important;
+}
+/* uncomment if you use text theme, for time readability */
+.playback-bar__progress-time-elapsed,
+.main-playbackBarRemainingTime-container {
+  mix-blend-mode: normal !important;
+  background: rgba(var(--spice-rgb-main), 0.8) !important;
+  box-shadow: 0 0 16px 8px var(--spice-main) !important;
+}
