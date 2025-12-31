@@ -14,11 +14,10 @@ Available options:
 - **Playbar Background Image** – sets a custom background for the playbar  
 - **Slider Background Image** – sets a background image for the progress slider  
 - **Default (reset all)** – restores the playbar to its original state  
+![Settings](img/menu.png "Menu")
 
 ### Recomendations
 Use an image with a 1:1 aspect ratio (e.g. 32×32)
-
-![Settings](img/menu.png "Menu")
 
 ## Installation
 
