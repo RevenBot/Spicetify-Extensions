@@ -7,7 +7,6 @@ export const setProgressBarFill = (imageBase64: string | ArrayBuffer | null) => 
   fillBar.style.backgroundPosition = "center";
   fillBar.style.backgroundSize = "contain";
   fillBar.style.width = "100%";
-  fillBar.style.height = "16px";
 }
 export const unsetProgressBarFill = () => {
   const fillBar = document.body.querySelector(".x-progressBar-fillColor") as HTMLDivElement;
@@ -27,7 +26,6 @@ export const setProgressBarBg = (imageBase64: string | ArrayBuffer | null) => {
   fillBarBg.style.backgroundRepeat = "reapeat-x";
   fillBarBg.style.backgroundSize = "contain";
   fillBarBg.style.width = "100%";
-  fillBarBg.style.height = "16px";
 }
 export const unsetProgressBarBg = () => {
   const fillBarBg = document.body.querySelector(".x-progressBar-progressBarBg") as HTMLDivElement;

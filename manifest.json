@@ -2,7 +2,7 @@
   {
     "name": "Funny-Playbar",
     "description": "Spicetify extension to customize the playbar with images.",
-    "preview": "img/preview2.png",
+    "preview": "funny-playbar/img/preview1.png",
     "main": "funny-playbar/dist/funny-playbar.js",
     "readme": "funny-playbar/README.md",
     "authors": [
